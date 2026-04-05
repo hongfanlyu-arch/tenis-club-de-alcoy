@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tenis Club de Alcoy | Inscripción</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Tenis Club de Alcoy</a>
+      <nav class="site-nav">
+        <a href="index.html">Inicio</a>
+        <a href="coaches.html">Entrenadores</a>
+        <a class="active" href="signup.html">Inscripción</a>
+        <a href="contact.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container form-layout">
+      <div>
+        <p class="eyebrow">RESERVA</p>
+        <h1>Solicita información o una clase de prueba</h1>
+        <p class="lead">
+          Completa el formulario y el club podrá orientarte sobre academia anual, campus intensivos,
+          alquiler de pistas o futuras estancias deportivas.
+        </p>
+      </div>
+
+      <form class="signup-form" id="signupForm">
+        <label>
+          Nombre completo
+          <input type="text" name="name" placeholder="Escribe tu nombre" required>
+        </label>
+        <label>
+          Teléfono
+          <input type="tel" name="phone" placeholder="Escribe tu teléfono" required>
+        </label>
+        <label>
+          Perfil
+          <select name="ageGroup" required>
+            <option value="">Selecciona una opción</option>
+            <option>Niño o junior</option>
+            <option>Adulto</option>
+            <option>Familia / grupo</option>
+          </select>
+        </label>
+        <label>
+          Interés principal
+          <select name="courseType" required>
+            <option value="">Selecciona una opción</option>
+            <option>Academia de tenis</option>
+            <option>Campus intensivo</option>
+            <option>Clase individual</option>
+            <option>Alquiler de pista</option>
+          </select>
+        </label>
+        <label>
+          Mensaje
+          <textarea name="message" rows="4" placeholder="Cuéntanos qué tipo de entrenamiento o visita te interesa"></textarea>
+        </label>
+        <button class="button primary" type="submit">Enviar solicitud</button>
+        <p class="form-message" id="formMessage" aria-live="polite"></p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Tenis Club de Alcoy</p>
+      <p>Respuesta orientativa del formulario en esta demo local.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
